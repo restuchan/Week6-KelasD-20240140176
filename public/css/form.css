@@ -1,0 +1,25 @@
+/* variabel, body, nav, header & footer diambil dari index.css */
+.studio{ max-width:980px; display:grid; grid-template-columns:1fr 1fr; gap:20px; align-items:stretch; }
+@media (max-width:760px){ .studio{ grid-template-columns:1fr; } }
+
+form, .result{ display:flex; flex-direction:column; gap:6px; padding:24px; background:var(--card); border:1px solid var(--line); border-radius:16px; }
+h2{ font-family:var(--display); font-size:22px; margin:0 0 4px; }
+label{ margin-top:10px; font-size:14px; font-weight:700; color:var(--leaf); }
+
+input, select, textarea{ padding:12px 14px; border:1.5px solid var(--line); border-radius:10px; background:var(--bg); font:inherit; font-size:15px; color:var(--ink); outline:none; }
+input:focus, select:focus, textarea:focus{ border-color:var(--leaf); box-shadow:0 0 0 3px var(--mint); }
+select{ cursor:pointer; }
+textarea{ flex:1; min-height:340px; resize:vertical; line-height:1.65; }
+
+button{ margin-top:14px; padding:13px; border-radius:10px; font:inherit; font-weight:700; cursor:pointer; }
+.primary{ border:0; background:var(--promo); color:#fff; }
+.primary:hover{ background:#e86a0a; }
+.secondary{ border:2px solid var(--leaf); background:transparent; color:var(--leaf); }
+.secondary:hover:not(:disabled){ background:var(--leaf); color:#fff; }
+.secondary:disabled{ opacity:.4; cursor:not-allowed; }
+
+.hint{ color:var(--soft); font-size:13px; min-height:18px; }
+.error{ color:var(--red); font-size:13px; min-height:18px; }
+input[aria-invalid="true"]{ border-color:var(--red); background:#fdeceb; }
+.notice{ margin:0; padding:10px 14px; border-radius:10px; background:var(--mint); color:var(--deep); font-size:14px; }
+[hidden]{ display:none; }

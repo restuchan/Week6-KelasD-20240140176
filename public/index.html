@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SegarMart - Etalase Belanja</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+  <nav>
+    <a class="brand" href="index.html">SegarMart</a>
+    <div class="links">
+      <a href="index.html" aria-current="page">Etalase</a>
+      <a href="form.html">Caption</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Belanja segar,<br>hemat tiap hari.</h1>
+    <p>Sembako, kebutuhan dapur, dan perawatan diri. Data produk diambil langsung dari dummyjson.com.</p>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Cari produk, misalnya susu, apel, madu" aria-label="Cari produk">
+      <select id="categorySelect" aria-label="Filter kategori">
+        <option value="">Semua kategori</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <p id="count" class="count" aria-live="polite"></p>
+    <div id="status" role="status">Memuat produk...</div>
+    <div class="grid" id="productGrid"></div>
+  </main>
+
+  <footer>SegarMart, dibuat dengan HTML, CSS, dan JavaScript native. Sumber data: dummyjson.com</footer>
+
+<script src="js/index.js"></script>
+</body>
+</html>
